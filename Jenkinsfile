@@ -10,10 +10,7 @@ node
         stage('for the fix branch') {
             // Commands specific to the 'fix' branch go here
         echo "branch name : ${env.BRANCH_NAME}"
-            bat '''
-            // Your shell script goes here
-            cat README.md
-            '''
+          
         }
     }
      if (env.BRANCH_NAME.startsWith("PR-")) {
